@@ -2,16 +2,115 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Mohammed AlKenani</title>
+
+    <title>Mohammed AlKenani Profile</title>
+    <style media="screen">
+    * {
+        font-family: Helvetica;
+        /*border: 1px solid red;*/
+      }
+.container {
+  align: center;
+  display: grid;
+grid-template-columns: 1fr 1fr 2fr 1fr;
+grid-template-rows: 1fr;
+width: 100vw;
+height: 100vh;
+margin-left: 0;
+}
+.container div:nth-child(2){
+background-color: #ffbd2e;
+
+}
+.container div:nth-child(3){
+background-color: white;
+}
+.navui{
+  padding: 0;
+  text-align: center;
+}
+.navli {
+  background: black;
+  color: #ffbd2e;
+  list-style: none;
+}
+.subnavui{
+  padding: 0;
+}
+.subnavli{
+  list-style: none;
+  font-size: 10px;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+span {
+  color: #ffbd2e;
+}
+h1{
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-bottom: 0;
+  }
+h3 {
+margin-left: 40px;
+  margin-top:0;
+}
+img {
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  }
+  #aboutme{
+    font-size: 10px;
+    text-align: center;
+    margin: 20px;
+    border: 1px solid red;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .hoby{
+    font-size: 10px;
+  }
+
+
+    </style>
   </head>
-  <body>
-    <aside class="yellow" style="background:blue">
-      <h1>hello there</h1>
-    </aside>
-    <p>This is my resume</p>
-    <h1>why it didn't capture it</h1>
-    <a href="www.yahoo.com">Yahoo</a>
-    <br><br>
+  <body style="padding:0px;margin:0px;">
+    <div class="container">
+      <div class="">1</div>
+      <div class="">
+        <img src="img/profile.jpg" alt="My Profile Photo">
+        <ul class="navui">
+          <li class="navli">CONTACT</li>
+          <ul class="subnavui">
+            <li class="subnavli">Address<br>Kuwait, Kuwait</li>
+            <li class="subnavli">Mobile<br>+965 50145514</li>
+            <li class="subnavli">Email<br>m_alkenani@icloud.com</li>
+            <li class="subnavli">Website<br><a href="https://m-alkenani.github.io/">My Website</a></li>
+            <li class="subnavli">LinkedIn<br><a href="https://www.linkedin.com/in/mohamedalkenani/">My LinkeIn</a></li>
+          </ul>
+          <li class="navli">ABOUT ME</li>
+          <p id="aboutme">I will put some text here to talk about my self,I will put some text here to talk about my self,I will put some text here to talk about my self,I will put some text here to talk about my self,I will put some text here to talk about my self,I will put some text here to talk about my self,</p>
+          <li class="navli">HOBBIES</li>
+          <ul class="hoby">
+            <li>Swimming</li>
+            <li>Horse Riding</li>
+            <li>football</li>
+          </ul>
+        </ul>
+      </div>
+      <div class="">
+        <h1><span>MOHAMMED</span> ALKENANI</h1>
+        <h3>Java Backend Developer</h3>
+      </div>
+      <div class=""></div>
+      <div class=""></div>
+
+    </div>
+
 
   </body>
 </html>
