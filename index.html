@@ -19,7 +19,7 @@ height: 100vh;
 margin-left: 0;
 }
 .container div:nth-child(2){
-background-color: #ffbd2e;
+background-color: #FECA07;
 
 }
 .container div:nth-child(3){
@@ -31,8 +31,9 @@ background-color: white;
 }
 .navli {
   background: black;
-  color: #ffbd2e;
+  color: #FECA07;
   list-style: none;
+  padding: 3px 0 3px 0;
 }
 .subnavui{
   padding: 0;
@@ -45,8 +46,13 @@ background-color: white;
   margin-left: 30px;
   margin-bottom: 10px;
 }
+.subnavliicons{
+  margin-left: 10px;
+  list-style: none;
+  display: inline;
+}
 span {
-  color: #ffbd2e;
+  color: #FECA07;
 }
 h1{
   margin-top: 60px;
@@ -58,8 +64,10 @@ h3 {
   margin-top:0;
   margin-bottom: 100px;
 }
-img {
+#myimg {
   display: block;
+  width: 150px;
+  height: 150px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -85,7 +93,7 @@ img {
   .mainil {
     /*list-style: url("img/profile.jpg");*/
     list-style-position: inside;
-    border-bottom: 1.5px solid #ffbd2e;
+    border-bottom: 1.5px solid #FECA07;
   }
   .mainul{
     padding: 0;
@@ -98,7 +106,6 @@ img {
 
   }
   .rfrncp{
-
     width: 100px;
     height: 100px;
     display: inline-block;
@@ -106,11 +113,29 @@ img {
     font-size: 10px;
   }
   h2{
-    border-bottom: 1.5px;
-    border-bottom-style: solid;
-    border-bottom-color: #ffbd2e;
-    padding-left: 20px;
+    margin-left: 20px;
+    border-spacing: 50px;
+    border-bottom: 1px solid #FECA07;
+    padding: 0;
     font-size: 20px;
+  }
+  .subnavimg{
+    margin-top: 0;
+    display:inline;
+    width:20px;
+    height:20px;
+  }
+  .h2img{
+    width: 25px;
+    height: 25px;
+    display: inline;
+    margin:0 20px 0 0;
+    padding: -5em;
+    /*border: 1px solid red;*/
+  }
+
+  #about{
+    margin-top: 30px;
   }
 
 
@@ -120,17 +145,18 @@ img {
     <div class="container">
       <div class=""></div>
       <div class="">
-        <img src="img/profile.jpg" alt="My Profile Photo">
+        <img src="img/profile.jpg" alt="My Profile Photo" id="myimg">
         <ul class="navui">
           <li class="navli">CONTACT</li>
           <ul class="subnavui">
-            <li class="subnavli">Address<br>Kuwait, Kuwait</li>
+            <li class="subnavli">Address<br>Jabryia Block 8, St. 18 <br>Kuwait City, Kuwait</li>
             <li class="subnavli">Mobile<br>+965 50145514</li>
-            <li class="subnavli"><a href="mailto:m_alkenai@icloud.com?subject=We like your Profile" style=""> <img src="img/email.jpeg" style="margin-top: 0;display:inline;width:20px;height:20px;" alt=""> </a></li>
-            <li class="subnavli"><a href="https://m-alkenani.github.io/"><img src="img/w.png" style="margin-top: 0;display:inline;width:20px;height:20px;" alt=""></a></li>
-            <li class="subnavli"><a href="https://www.linkedin.com/in/mohamedalkenani/"><img src="img/ln.jpg" style="margin-top: 0;display:inline;width:20px;height:20px;" alt=""></a></li>
+            <li class="subnavliicons"><a href="mailto:m_alkenai@icloud.com?subject='We like your Profile'" ><img src="img/email.jpeg" class="subnavimg" alt="email"></a></li>
+            <li class="subnavliicons"><a href="https://m-alkenani.github.io/"><img src="img/w.png" class="subnavimg" alt="Web Profile"></a></li>
+            <li class="subnavliicons"><a href="https://www.linkedin.com/in/mohamedalkenani/"><img src="img/ln.jpg" class="subnavimg" alt="LinkedIn Profile"></a></li>
+            <li class="subnavliicons"><a href="https://github.com/m-alkenani/"><img src="img/git.jpg" class="subnavimg" alt="Github Repository"></a></li>
           </ul>
-          <li class="navli">ABOUT ME</li>
+          <li class="navli" id="about">ABOUT ME</li>
           <p id="aboutme">I have been working in the IT field for the past 18 Years in administering & supporting ready made softwares. I am more interested to move forward and get advanced indepth knowledg about the tecknologies behind those softwares, that's why i've joined Openclassrooms Java backend developer path. I am hardworker & self learner.</p>
           <li class="navli" style="margin-top:60px;">HOBBIES</li>
           <ul class="hobyui">
@@ -142,28 +168,21 @@ img {
       </div>
       <div class="">
         <h1><span>MOHAMMED</span> ALKENANI</h1>
-        <h3>Java Backend Developer</h3>
-        <!--ul class="mainul">
-          <li class="mainil">EDUCATION</li>
-          <li class="mainil">EXPERIENCE</li>
-          <li class="mainil">REFERENCES</li>
-        </ul-->
-        <h2>EDUCATION</h2>
+        <h3>Principle Consultant</h3>
+        <h2><img src="img/ed.png" alt="Edu" class="h2img">EDUCATION</h2>
         <ul>
           <li>University of Helwan</li>
         </ul>
-        <h2>EXPERIENCE</h2>
-        <h2>REFERENCES</h2>
+        <h2><img src="img/ex.png" alt="Exp" class="h2img">EXPERIENCE</h2>
+        <h2><img src="img/ref.png" alt="Ref" class="h2img">REFERENCES</h2>
         <p class="rfrncp">Mohamed Omar Abdelrahman<br/>Director<br/>Future Systems<br/></p>
         <p class="rfrncp">Mohamed AlKenani<br/>Practice Consultant<br/>00965<br/>email:</p>
-        <p class="rfrncp">Mohamed AlKenani<br/>Practice Consultant<br/>00965<br/>email:</p>
+
       </div>
       <div class=""></div>
       <div class=""></div>
 
     </div>
-
-    
 
   </body>
 </html>
