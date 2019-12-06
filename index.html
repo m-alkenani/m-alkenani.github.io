@@ -135,13 +135,46 @@ h3 {
   }
   #about{
     margin-top: 30px;
+
   }
   .eduspan{
     padding-left: 100px;
     border: 1px solid red;
-
+  }
+  td ul {
+    font-size:9px;
+    width: 130px;
+    margin: 0;
+    padding:0;
+    list-style-position:inside;
+    list-style: none;
+    margin-left: 15px;
   }
 
+  td ul li:nth-child(1)::before {
+    content: "\229A";
+    color: #FECA07;
+    font-weight: bolder;
+    display: inline-block;
+    width: 2em;
+    margin-left: -1em;
+  }
+
+  .edu2 ul li:nth-child(1)::before {
+    content: "\2022"; /*css entities https://www.w3schools.com/cssref/css_entities.asp */
+    color: #FECA07;
+    font-weight: bolder;
+    display: inline-block;
+    width: 2em;
+    margin-left: -1em;
+  }
+  h4, h5{
+    display: inline;
+  }
+  td p{
+    width: 250px;
+    margin-top: 5px;
+  }
 
 
     </style>
@@ -163,7 +196,7 @@ h3 {
           </ul>
           <li class="navli" id="about">ABOUT ME</li>
           <p id="aboutme">I have been working in the IT field for the past 18 Years in administering & supporting ready made softwares. I am more interested to move forward and get advanced indepth knowledg about the tecknologies behind those softwares, that's why i've joined Openclassrooms Java backend developer path. I am hardworker & self learner.</p>
-          <li class="navli" style="margin-top:60px;">HOBBIES</li>
+          <li class="navli" style="margin-top:340px;">HOBBIES</li>
           <ul class="hobyui">
             <li class="hobyli"><img class="hobyimg" src="img/soccer-ball.svg" alt="Football"></li>
             <li class="hobyli"><img class="hobyimg" src="img/tennis.svg" alt="Tennis"></li>
@@ -179,34 +212,67 @@ h3 {
           <tbody>
             <tr>
               <td style="margin-left: 10px;vertical-align:top;">
-                <ul style="font-size:11px;margin: 0;padding:0;list-style-position:inside;">
-                  <li style="">2019-2020</li><li style="list-style:none;margin-left:15px;">Kuwait</li>
+                <ul>
+                  <li style="">2019-2020</li><li style="margin-left: 12px;">Kuwait</li>
                 </ul>
               </td>
-              <td><span style="padding: 20px;"></td>
-              <td style="font-size:11px;"><h4 style="margin-bottom: 0;margin-top:0;">OPENCLASROOMS</h4><br><h5 style="margin: 0; padding:0;">Java Backend Developer</h5><br>Studying how to desdign & develop backend web applications using Java programming language & Spring framework.</td>
-            </tr>
 
-            <tr>
-              <td style="font-size:11px;margin: 0;padding:0;vertical-align:top;">2019-2020<br>Kuwait</td>
-              <td><span style="padding: 20px;"></td>
-              <td style="font-size:11px;"><h4 style="margin-bottom: 0;margin-top:0;">OPENCLASROOMS</h4><br><h5 style="margin: 0; padding:0;">Java Backend Developer</h5><br>Studying how to desdign & develop backend web applications using Java programming language & Spring framework.</td>
+              <td style="font-size:11px;"><h4>OPENCLASROOMS</h4><br><h5>Java Backend Developer</h5><br><p>Studying how to desdign & develop backend web applications using Java programming language & Spring framework.</p></td>
             </tr>
             <tr>
               <td><span style="padding: 40px;"></td>
             </tr>
             <tr>
-              <td style="font-size:11px;margin: 0;padding:0;width: 100px;vertical-align:top;">1995-2000<br>Cairo</td>
-              <td><span style="padding-left: 30px;"></td>
-              <td style="font-size:11px;"><h4 style="margin-bottom: 0;margin-top:0;">Faculty Of Applied Arts</h4><br><h4 style="margin-bottom: 0;margin-top:0;">HELWAN UNIVERSITY</h4><br><h5 style="margin: 0; padding:0;">Interion Design</h5><br>Studied how to design interior spaces based on their purpose of use & to decide on the suitable interior objects & colors.</td>
+              <td class="edu2" style="margin-left: 10px;vertical-align:top;">
+                <ul>
+                  <li style="">1995-2000</li><li style="margin-left: 12px;">Cairo</li>
+                </ul>
+              </td>
+
+              <td style="font-size:11px;"><h4>HELWAN UNIVERSITY</h4><br><h5>Interion Design</h5><br><p>Studied how to design interior spaces based on their purpose of use & to decide on the suitable interior objects & colors.</p></td>
             </tr>
           </tbody>
         </table>
         <h2><img src="img/ex.png" alt="Exp" class="h2img">EXPERIENCE</h2>
+        <table  style="padding-left: 15px;">
+          <tbody>
+            <tr>
+              <td style="margin-left: 10px;vertical-align:top;">
+                <ul>
+                  <li style="">June 2019 - Current</li><li style="margin-left: 12px;">Kuwait</li>
+                </ul>
+              </td>
+
+              <td style="font-size:11px;"><h4>CA MENA</h4><br><h5>Principle Consultant</h5><br><p>Meeting with customers, listen to their IT environment pains & provide the solution.</p></td>
+            </tr>
+            <tr>
+              <td><span style="padding: 40px;"></td>
+            </tr>
+            <tr>
+              <td class="edu2" style="margin-left: 10px;vertical-align:top;">
+                <ul>
+                  <li style="">July 2012 - June 2019</li><li style="margin-left: 12px;">Kuwait</li>
+                </ul>
+              </td>
+
+              <td style="font-size:11px;"><h4>CA MENA</h4><br><h5>Senior Consultant</h5><br><p>Meeting with customers, listen to their IT environment pains & provide the solution.</p></td>
+            </tr>
+            <tr>
+              <td><span style="padding: 40px;"></td>
+            </tr>
+            <tr>
+              <td class="edu2" style="margin-left: 10px;vertical-align:top;">
+                <ul>
+                  <li style="">December 2007 - June 2012</li><li style="margin-left: 12px;">Dubai</li>
+                </ul>
+              </td>
+
+              <td style="font-size:11px;"><h4>LS2</h4><br><h5>IT Technical Consultant</h5><br><p>Meeting with customers, listen to their IT environment pains & provide the solution.</p></td>
+            </tr>
+          </tbody>
+        </table>
         <h2><img src="img/ref.png" alt="Ref" class="h2img">REFERENCES</h2>
         <p class="rfrncp">Mohamed Omar Abdelrahman<br/>Director<br/>Future Systems<br/></p>
-        <p class="rfrncp">Mohamed AlKenani<br/>Practice Consultant<br/>00965<br/>email:</p>
-
       </div>
     </div>
   </body>
